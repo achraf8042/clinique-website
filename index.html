@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique MediCare - Services de Santé Professionnels</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <i class="fas fa-phone-alt"></i>
+        Urgence : Appelez le 198 ou le +216 72 12 34 56
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-heartbeat"></i>MediCare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specialities">Spécialités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Équipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Réservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Témoignages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <a href="#booking" class="btn btn-appointment">Prendre RDV</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Votre <span class="highlight">Santé</span> est Notre <span class="highlight">Priorité</span></h1>
+                <p>Services de santé professionnels avec des médecins expérimentés et des installations modernes</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary-hero btn-hero">Prendre Rendez-vous</a>
+                    <a href="#about" class="btn btn-outline-hero btn-hero">En Savoir Plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-number" data-count="50000">0</div>
+                        <div class="stat-label">Patients Satisfaits</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-user-md"></i>
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">Médecins Experts</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-hospital"></i>
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">Années d'Expérience</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-award"></i>
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">% de Succès</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialities Section -->
+    <section id="specialities" class="speciality-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nos Spécialités</h2>
+                <p>Nous offrons des services de santé complets dans divers domaines médicaux</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="speciality-card">
+                        <div class="speciality-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Neurologie</h3>
+                        <p>Diagnostic et traitement expert des troubles neurologiques avec une technologie avancée</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="speciality-card">
+                        <div class="speciality-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Cardiologie</h3>
+                        <p>Services de soins cardiaques complets avec des installations cardiaques de pointe</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="speciality-card">
+                        <div class="speciality-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Pédiatrie</h3>
+                        <p>Soins de santé spécialisés pour les nourrissons, enfants et adolescents avec des soins doux</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="speciality-card">
+                        <div class="speciality-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Ophtalmologie</h3>
+                        <p>Services complets de soins oculaires incluant chirurgie et traitements de correction de vision</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="speciality-card">
+                        <div class="speciality-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3>Dentisterie</h3>
+                        <p>Traitements dentaires modernes axés sur les soins préventifs et l'hygiène bucco-dentaire</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="speciality-card">
+                        <div class="speciality-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h3>Orthopédie</h3>
+                        <p>Soins spécialisés pour les os, articulations et troubles musculo-squelettiques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Notre Équipe Médicale</h2>
+                <p>Rencontrez nos médecins dévoués et expérimentés</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="data:image/jpeg;base64,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" alt="Dr. Martin">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Dr. Sophie Martin</h4>
+                            <p>Cardiologue</p>
+                            <p class="team-bio">15 ans d'expérience en cardiologie interventionnelle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAIEBQYHAQj/xABCEAACAQMCAgYHBAcGBwAAAAABAgMABBEFIRIxBgcTIkFRFDJhcYGRoSNCUsEVJXOx0eHwMzVDU3KSFiRigpOi8f/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACARAQEAAgIDAAMBAAAAAAAAAAABAhEDIRIxQRMiMgT/2gAMAwEAAhEDEQA/AOnNQmzRWphFWzAbNCajsKEwoALUMiikUNqQZDrJGdBXfH2ormOAPHNdO6yh+ol/aiuZAVUKkAKmWMEEsvDPKEBO+CMioU86W4UdoqOdzlckCjG4tZ4l4p7dd87qQG+NTaci4ews7KKR57lWjYr2ZxueefjVXfSW6or44FORnGQ3y5VHtpI77UpkYF4+ycoA2d8eXmagXTzzW6hkDIF2DYz+WKWz0Fdjju4nRlZNxkHNdI6tB+qrj9uf3Vy2F+wOXi7pOcfnXVerYq+jTPGcqZjRb0JO2rYUJhRzvQ2qFAsNqCwqQ24oLigAEDNKnEb15QboBYGmtTzTGrVmG1CaitQ25UAFqGaM1DakGO6yv7iT9sK5xFGGILHujdvcOddI6yv7kj/bLXOfs0Ryc5CMcZ2O1PfRX2p7mVnuTNiFVblkCnC4DqwuDHL3d8N3sfEVVzYDkED4cq9hlWMeojD21G1rro5LZx6xFNGrKE4ieJvHFQr2WCclgvASxOWPEc+6oSXBWZZYwBwnOFFMvcLdSgAAFs4xyoMR1KqQsgHFzPnW/wCqu9KtdWDYOwlUg7eRrm6E+Yra9Vu3SCXDHe3bOBsdxSDrB5UNt6eTtTTSAbCgNzo70BudBhNzpUm515QHQWpjGnmmGtGYbUxuVENMamAmoTUZqE2KQY7rJBOjxYx/ajnWQ077TozrFr2cJkPA6sw3PPu5rXdZRH6JhGOcv5VhoGnGnTw2qd+6Kx8XkM0s/wCVYd5KnRui9zqT8Yj4YR6zvt8hWrtugtkO86Bz45HOtbdeh6JpsYdJOwiUKWjQtw+043p1jdWt5CJbKaOWMjmpzXHlllfTv48MIwOq9BYi3FYt2bDwztVff9ELlYyxYOQOQPjXUpFBAJXnUeVEOe6Kn8mUafiwvxwm6tJLaR45VwyncCtr1VWU739xehgIY4+zKn7xOP3Yq06SaBFfRSSKmJlUsGHmKsura0ig0QtEctK5LGunDLyji5ePwyasDbnTW5U8jFNblVMgHNCajOKEwoMBudeU5hvSoDfFhTTTsU01ozMahsaI1CYUAwmhtTyK8CNIcIrE+wUBi+skcWm2yjmZvyrF2YDTxqbjsezTjQ52LA5A+JFdX6Q9ELzXYIYmmjtEVuIs44j5chWe6NdFbaLpG8En/NJYYkmlK4BYDuIB7CCx9oFTlN9NML49rHVxcNbtJanEvDkKxwD7DWDeO79LEn6JktLkkFpoJVjz7+HZviK6fOisSqtxEHB9/M1S38cdu6cMRkZzg4+6PM1xZW43T0MP2kry2uB6ArzuXZRgswGTWQ1HWriad401MW0YO4SFQ/8A7H8q1Fw0cUBLKeEHJ4a8bSYJm7SSFGyM95AaUy7XljuM9DHHaaTd6g11eXPaQnhadwck7DAGw51O6tgB0eVebRyOh+BqD07Gp2ltFDaWLDTjHmWcYIBOwGxyOXM+dSerPiSwuEPqkq4+Ix+VdWE63XDy5S3Ua9qYeVFahtyqmILjNBajNQXoMBudKk3OlQGjOq2I/wARyfbKRTG1ayHNn/8AK1cf9PuM5MhzTX1C5/zW+das+nXX1qwxtPIvukNSNMmOquY7F5Zces3GcL7ziuTdHba51zW7TT+2ZBM+GYfdUDJPyFd/0qytdHtoNPsowkKjGTuWPmT4k0jjyz0mK3HFPI07/wDV6vyqcrJjhUKuPAbV4zVH4wZKRnvIEzvzrD9BAZbLV9RdmL3N9Iu/LAwBW1uU+zP+knNYfq0kMvRRifv3U3zDkfkKBtH1K+Ona7Eku0F9brIh8nXut9OH50G6m4WLy8QX8SqT/OjdNLBpdJtbhRiSznx/2tt/Cqu3vMQhJe+ANt964uXrOvT4NZccsHe6trjHZFQRzAOTR4b+H02DTy/FPIrME8VQYyT5eA+NVd/qAhtG9FjxIdsk5AoHQCwL3t7q1wzPK32aOxztzJ+ePlS45vI+b9cGltrvg6WWumPwsl3p7twtuGKMNseOxb5UbTuj9tZ6tcW9ggtY5IldYeaLhmzjyHsrP63M0HWN0ZMRJkaKZeEDwIra2krvdPK53KhV89jvXdp5aFeWU9qftVBXwdTkVDatXK/FGsRAIc4ORmqHVLIW7GSEHsSf9p8qVx+ntWNQWorGgvUmC3OlXrc6VAczOQfH5UzOSQa8MrHbiNOhilnlSKBeOaRgiL+JicAVsydG6ntDeW7n12ZT2UKmGDyLkd4/AbfGuohgeEn1lOKDomlxaLo1npsP+BEFZvxt95vid6Iy4kxUqHLA+IoJ2OedP7oUnHIUCN+MnagA3MrwSnALxyDdc8j76yHVRIr9FWjAw8d5PkH2uTW1lAyCfLesR1V4GmalAOcOp3CH5g/nQF/qUAurW+s+fHGGX3/0KwbR8EfeBGDg55iui3HBBcvIThQmPfWV1GD03WBCIjD2wyWxkHHMiubnw3qx2f5uTx3KyU4kuZltrRS8rfIe0+QrTxNb9GOj7TXsqxxxLgsfvM3kBzJPhVhBpsOmKVs4iHbdnY8TN7M1memlxFfajoehz5maS77ebHLCqRw/Hi+lPi4/Ec/P5+mN1DXry+6UWWvizvRY2nCit2J9XfJ+tdm0K4s9Xsob/TLsTwSeJBDZ8iPA+ygPAtsoVFURkAcONsVk+iLHTOnut6dZArZsiTiIckcgZx7810fXJ8dEcnjQE4O9MmPbW0sY5yA/ACmTuePyPCa8BxGT4bKKZM5JsSCORoL86sNUjEVyXweBxxD8/wCvbVe5rOqgJ50q8Y70qRuXxtx+qPhW26qdK/SHSkXEi5gsI+1Y+HGdkH7z8Ky97FDOfSICEmHrjwf2++uwdVemGz6LLcyoUmvX7ZgRgheS/Tf41qzbOd8cvpQX7wVhXvCCCMb0NTg8HhmkZ0h+yNAtj63vo7+oRUe2Ax8aAM3vrD9W47PVelNv/l6kz/7lH8K2Ny6oCcVz/ofePbdOekXaq6xTSoQSpCsN8kHxxmgRub6LtXZfZn5VUdn+soHCkBIZN8eZSry5OLiI/iJB+VRZbcFyV/8AlFmzl0jTjfPsqk/Qtnda7bajMrCe1b7IhsDcHOR41ezLyxvtUZI2inRn2DMCPqPzpGl3cHaREruQdgKodI0AWfSDUdYaYu94EXsyuBGFGNvfitOB3SPGgKoBf3/zqi2DO/26qBkttXrEFgozgUPIe9K+A51IC5YAeFBIeuRZs4n/AAN++s+1afW1/Vr+8VlmzUZe1QJude0xic0qk3P7axn1PULbTrU4lupRECB6uTufgMn4V9IxRxWVrDbwgiOJBGg9gGB+6uTdUWm+m6/c6hKgEVjEArY5u+Rj4AH5iuwO0T7MRmtaziMjd/PhXk6jHGpz5ik4APdORQJ+6pkySB6wpGMRlT7qBanYmnwsssQdDnagwHhLKKYVPTW8msdEuJ7X+1ETsDjOMKTy/rlWWubCwfo5d6hZXKL6NCZFv1bv8eOLn45ONuRzit9qNjFqFo0E2cHdSOYPn/XhWNPQe39I4pDAF4+I8EeN/PBOAfbU2Ki40a9mu9Es5roYmUITjbxwRVwSA5qMlpHHZdlHgLGoAAPgKOoywppBmwrA4PLnVXOJJ5AeLbI4fgwP5VZajwyR9mcgMpU8JwcGsl0b6N3OgyTRLqjXNkSGiikXvK+d8n3UCNhI+BTEP2YHjQyeNwOLAHPaszZanr930r7J9Da20qIuhuJpMEgA4YDPInGOfvphoIUK3khY7k5x5bVNhQs2cVA0/MjSTyOuGcleE5yDyqzZwqBVyDjxoCLqY7SIwjmVPzrIFxWucFsY5g1lb2PsrmZMfe2qMjiIzb0qaw3pVKl91RLbv0Vcwyp24unMy53ztjPwxW0MbZ5p86491NSTx61qMEgZI5LZXwTsWDYz8ia7BCgcZZiF+Wa1rOPGhc8rhV/0pk/Wotw11b78CzxHy2NWS2yvyOMeOMn616bNGU8bOw8if5UGpdMmjW4ljQsgfvCKQYKnxx5j91SSOG4b20C80SddQhvLC52jI4raQ90jO5B8Dgn30a6jKzqxz5UA3VbqSz0q6uYYxJLFEXVSDviq7QdYh160eeGNomSTgdCclTjIPuINXAXiBUnIIwR51gNIP/DXTOTT3PDa3hCoTsNySn1JX41pjjLLEZZXGtrNEkWJiPtGHCTmlHyry6UzXSIp+zjGT7TTgMHArJYFyN1oDJ349vvVIlHeyfAVHgkWSR3yOCMlc+3xoA7eO9RNRm7K0m4WUMV4VLcuI7D60VJVcZRgdyPlVRrCxSPE90+LW0btpBn1iPVHuzv8qZxI0PT/ANF2UYuLjtnUDcDhHyo895KX4Yojj8XCT/CoWn+lTqZ7vKmU5SP8C+A99WsVixHEqSge16QCR5QvaP4ezH0ql10D0pZBjvqMj21omtJfBjj8JrK6rKTeOCNk7uD4YpZehFe571KmtJvypVClN1USv/xTLvsbR8j4j+Fd2jRWjjcjcgUqVa1nB2PCo4dqa7sKVKlVBqAZNwPlXl1DHLFllwVyQRSpUQIMAyCTzFYjrExBf6Jfoo7dbng3GQRswz7iPqaVKjC3zGUng1790Njx3pIe7mvKVNMQL52xIc8lJFMKBEt4FyEPPzO2a8pVMU8jURtwIAq77CoenxJdSzG4UOEckKeWQ2AfoKVKn9NfQovEDzJ3OaJLMybDGPdSpU/qAw5f1gKzXSiNAYZQMOcgnzFKlSy9Kntm250qVKsjf//Z" alt="Dr. Dubois">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Dr. Pierre Dubois</h4>
+                            <p>Neurologue</p>
+                            <p class="team-bio">Spécialiste des troubles neurologiques complexes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="data:image/jpeg;base64,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" alt="Dr. Bernard">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Dr. Marie Bernard</h4>
+                            <p>Pédiatre</p>
+                            <p class="team-bio">Dédicée aux soins des enfants avec compassion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="data:image/jpeg;base64,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" alt="Dr. Laurent">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Dr. Jean Laurent</h4>
+                            <p>Chirurgien Orthopédiste</p>
+                            <p class="team-bio">Expert en chirurgie orthopédique minimale invasive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-image">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAxAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYBB//EAEQQAAIBAwMBBQQIBAQFAgcAAAECAwAEEQUSITEGEyJBUWFxgZEUIzJCobHB0QdSYvAzcpLhFSSCovFT0hYlNENztML/xAAaAQADAQEBAQAAAAAAAAAAAAAAAgMBBAUG/8QAJxEAAwACAQQBBAMBAQAAAAAAAAECAxESBCExQRMFFFFhIjJCsRX/2gAMAwEAAhEDEQA/AKWK5ipMUsV9EeAR4ruKfiligBmK5ipMUttDAjxSxUm2ltrAI8VzFS7aW0efSgCLFLFXLKwubtyttHu2faYnaqf5ieB8aJ6h2fbTtJe6nLyPlcsh2LjP3QRlj7TtGOm6o3miPLKxhuvCAGK5ipUCP/hyIT5J0b4Z6/Ck8bKfECvvp4yTS7C1jqfJFilipNtLbVETI8UsVJtpYoAjxS21JtpbaAI8UsVJiligCPFLFSbaW2gCPFKpMUqAJsUsVJtpbaw0jxSxUm2u7aAIsV3bT9td21mw0R7aQXmrMNrNcSd1BEzyYycA8D1PkBWh03sq8hEl7yMZwhwv+oct7lwP6qnkzRjX8mUx4at6SM1bWk10zR20RcjljgDZ7ySAPjWl0rspuxJdnvMjgeJUPu++3w2j+o1qbTT4LaJUWMYj6DAAX3Dpn28sfU1ax/Y6152XrLrtPZHo4+kie77srQWUFsiLGgxGPBgKoj9wGFXr5DPqTVDtUdujuARlpEBJOM8/31osen68fL/xQjtWc6SeSPrF5GB6+vX41yezq9GDuLGCUHlEfHUdPPqKptFeWvG1mj8gRuXz4wf0opuVeOF9h4x7fSkj4A59eOmOvwqibXhkmk/KBIuI28LoVbz2nI/2qQKGGY2Vx7Oo/Wr7pHN9tV+OBVaXTlJzAXQjpmumOquf2Qvpor9EO2ltrjm6g4mXvF9T+9dikWYdGXHqciuzH1E29HHk6eo7i20ttSbaW2uggRbaW2pdtLbQYR7aW2pNtLbQBFtpVLtpUGk2KWKk20ttYaR4pbak213bQBHt9OaKaDpA1SWQF2CIASFIGeT1POOnofhQ/B8hk+grU9iY2UXcm1tjbFDbeCRu6Hzrn6inONtMvglVaTXYOWdhb2kSxxxqAvswufXHJJ9pyfaKuHz+NN99dPTnr8c4/P8AD414+2+7PX1rsjnUY/v9/wAq4Pf0/D9PzpYyMH9/7+JoNrHarRtH5vL5GkXokXjIPp6KazWwDIGMHpnHPPPxPPyoL2rYDR/EyqXlA5wNxwenrxWB7QfxSvBNPbaZai3MbFGZsF1IOCMkY4Plg++p9Etk1/sdNreoGS6v3lMaFnLBV7wDhT6jinUMR0vRMkajnp+GOtLZgDzxnnoR161gLrtDf6Vq1xbIFCREKY/skcDI9OvqtErHtxDIVS7hZGJxkg8/EfsKfixdmtw3lwPXp6+n7Ug20YPHtHGenwqlZ61YXEkipcKJAcMvU5HXpyB76vJ3c3iiIkUfeDA+nmOaUBBvRuP7+FRSQqnjRcE9SF61MU5Hn7f045oB2smntYbSS2uZbeUzMN0bdeOh6ZFNGT465GVieVcUFNtLbWYte02oQ4W7t4bxR1ZD3b/HGQflRez7QaZdYEkrW0n8twu0D3MOPniu+OtxX+jiydDmj0ENtLbUqDcgkVgyHo6kEH4iu7a61Sfg5GmvKIdtd21Ltpba0wi20ql20qAJcUsVPsxUwtCjD6Q4iOM4Iy59yjn54HtqV5Jhbp6Kxjq3qVtlLbU6WkmwPIyxRno75y3uA8R+AxVgMkfEEYU/+pKNzfDyHw59tMyGYs5Z3bqzck+89Sfaa87L9SS7Yz1MP0uq75DsYhi/woQzf+pOAfkgyo+O74Voey5aQXckzF2PdgsxJPAY9T7+n4Vnq0XZdfqLj/OPyrz/AJryVumejfT48WP+KDYzn0byx/eax+v9vYNOlntLOzlluIm2yGUFFDe48t8cdRjg1sMDHOMefp+351g9W0Hs/Hfz6rrt8q9+yssLy4HCBeAOT9n29avKnZxU3ox8/avX+019JaK7NH3Ex7i3XABETFM48twX7WR7aZpP8Otb1RknvClup83PeNj2chcf9XwrVr2u0XT42tdB00FI4ZJFcoIowVRm4GMjOMdBQi67YatqDqJbjuI3x9XB4PP1+1Vk9eFolv8AIbfsl2V0q7lvNYljknuZGlCTv3hyxztVeh6/yn30UvLqxuezVze6OHSJWWKNslRxIPsg8AZzisZcW0kcs81xCtujzOFknkWIHLHkbsEnoOM9fZRqG7aDsfJb2ttJOve7nuI0KxL9Z0y+0k58wMe3plfL7m7Mxr95px1Oe21J0Mm9iTLDlS27DY4IXkfDIocmgaXfyo9ky7gwP/LzZHx64+QofrapqOpak0c8MbPMbiKKQlWXjxDcRjlQDnd9zHnQ210+5S7t3NuxQyL4o/EBz6g4qiYr2EL/ALL3LTyyQzxSbnZsOpUrznrz+lEexllqia8sV2sphSGV8uQ4yFOOc0Gl1jULW/ulivHZEnk8D4cDxHjnkfCtZ2F1ufUdVns54Ic/Q533pkYwh8jkefrWV4NnezRZ8Qz1z6+/1/est25ZhY2x8XE/nnH2TWo2MFB8PHrlPX3g1mu3CO2nWxSJ2HfjGMHPgbnjiuevBeP7GcSRpUVvZmnYEnhf/wB1VbJwjNEV69AOoq5iuRrTPSl7QoDJaN3ljcS27nnMbYHxHnRW17T6jDhbu1julH34zsf444/Ae+hRXFLOfZVIzXD3LJ5Onx5F3RrrLtJpd1gNM1vLnlLldp/1cj8aLBcqGUhg3IZTkYrzsqHi3Splc4+znFK37+0bfYXU9uT5I3hPvHQ/Gu2PqFr+yPPyfTIr+jPRdtKsbF2l1qFAjJbTEffZSCfkQPwpV1ff4jj/APNzHoAn2H6lO6/r3Zc/9Xl7wAffUYA54GSck+p9a7ipra1muSRbwtL67R4R7z5V4d5LyPbez6CcWPEtLsRYroHFK+n0zSJhHqWoqlw67ha20ZlkII+Cjj20Bue3MASQaPpSExIG76+bvCRuVchB4R9qqRguvRPJ1WOPZp7exuLpcwwMyj72MKPieKddX8+maZfDTtRsGurdO+kRQZSg4GOu1TkjqD1oB2wn1DUuz2gXTyzztParJcImRHJkA+JR4R78dAeaoaYzW2ia9PIbaWRdPtw0Yfdkkjk7Dj5H8KvHT6OPL1VWtF/shq95qfa/Tvpt7PM4WQje52rhG6D7I+VBO1sEf/xHqMk1zaQbpFO55g7NgAfYTc/keqgcdaLfw61C5uu01uh+ri2OwjQCNSdp8hwfjk0H7Radp9xrt7Mbq5O+Zh3dtBtK4AHJfbjp1Ct8avKSo5qfKdguzl06K6kCLcXkht5w3eEQxlRE+eAWY8Z8191TaXq1zcXcNvpypA8hC7LKEhwM8nvDmQAD+rHsp9lbLbzExaVHEwhnAe8nMzH6phjau1MHochuvHrV3TLPWL9I4ku52t3ddyW1v3cQjDDOVjAQZI9Og9DTPiKkVNatLgajcNctb2Qy2xru4AcqCSDtGZD1/lPU+tarTrp17CtDaRyXduJcvdY7tP8AE6BW8XXjlRQeP+HV/dSyyB47eN5GYDhupzjwZx188dKKQTro/Z1+zpH0meOdu9lb6tSd5JA5P4msetdjTzzUxENZkmguUilWTIjmRh5DAJAIIx7qrvp08d4JLMd5C3ijaGRXOz24OcjoT7DRDVtIlubuaeNJQHbOBCZFHxj3H8Kptp8rWojZoDLA24BpAp2E4PhcA8Nj/UaYCG/ubqK6mScFl75tq3MYbjJxgsCR8PKjnYG829oSILOBJJLWeMsu7G0oc4UsecD3UJu/+J21zcMhvEh7xyDhu7Iyfh6UT7D3Ek3aOOIJbFjDLuYW6hguxsjgD8qx+DZ8m5yyjl0PsYlMfmKz3bWeeDT7WZFMbLcjDZBByj1ou6RHOC6t5YcgfI8VnO3AZNJtmzu/5pftorfcf4fhUCq8mYh1x2dTeWkE4U55X8q0FsmlX+lSaibeayijba2yTd6DOCOnI86yQuI//u2sZP8AMmUPyzj8K0+n3NnN2MvbePvIyjO75IPB2YxjBPT8qpWNPyLOSp8Maun29yN2n6laOPJJcxMf3plxpd/bjc9rJt9UAcD4qfzoMAggTupIm8bdTs8h/Nip4Lu/0+NnjkuIyCOQTjHizz09KjXTr0Xnq6XZjHQJdB1IAfwuo9fbVnZRfV73b2f024v4Ybp7gE75YwG6nBBxxwKqJeaLK2ySK6tJM43RNvUn3HnrUqw0Wnqo99ikaVX+406TxR6vb48wyspB9oApUnxUW+fH+Te3GqRRaR9M06yUv9N+jZvvrDwoOQFIUHJ880Iv7m9uhINVupZYlU7ElYJHjcBkRjAPyPWm3F1JB2WjYfVrLrEqnusjjuwOvvGfOhDzreNci2SSaUxk7E8TZ3DyHNdahSedWSqfd7NR2oitG12BbiHeYbGPaAPIKeh+HTHlWdks7WFp/ocEULOAofaZc+JSAA5wOnl7K0/aWzuLjtG7wKrQi1WPdvXAOGGMAk9T5Cp9L7JWjxl7i6kuHmQFokO4L58YwfOmmlrWxaj20Bu3MKyaZ2bhkn3hbAHeEHjICc4zgdaj0LTnl0TWktUZjcW9osZbCq2CCQGOAcCtleXGi2kkKXssGbaMRxd/Im5F44AJ3fdHl5VTn7Z6TbA90+9gMARRFs/PYPxrFa15DjtlPsb2e1DS9aS+u0TasbARq5L8jHpjHxNXB2KtZdTnvri4uG76RpNm4BVyc9AM+fr5UJue3Zc/8tZyn0LuFHyVc/8AcaGz9q9VuT4DDFj+WIMfm5Y/KpvIhljNxaaVpUDmW3hSRuhMSGQ+nXlh86tXGp6dZkLcNDGyjwmeVA3w5LfhXll1qOo3mRd300q4+w0jFR7hnH4VTCL5fpS/J+BvjR6Ve9tNOjyqTmTH3YYGf8W2j8DWGudYjnu55vEFkkZsMAepzzg+2hp2KcN19tVrgrmsWShvjnQZ+mWr/a7sfEj8xj8aeJRIMJI5XyCuGHyrMPIv/iq7y1T5mSeNejVPaWpO5o41c/eCd03+pcGpLOJbK4jniaVygI298WBBGCCWyfkaycd3Mn+HKyj2MasLqVz/ADhveAf0p/lX4M4NGzS/QMS8dxFn+V9w/E0L7SqdR0xYLRjJIswfZIgQ/Zbz6edCYtYuV4KL8yP1qf8A4yoH1sePiD+n60coBKzNSWF0jlTEWYdVRg5/7c0T05Xj0e/Qo6MwIIYEfdFD7uYT3Uko+yzEjjH601JJEI2O6/5WNZ8/op9uStEy6ZGGXxfSDj4qP/bTIg8VnPIhKSLPCNycHlZfP4Cr9peXEybC0cgDfYkgUjofPGfXzqczGS3aKTTrVlYqT3LMhyoIGCcj7x8q1Z59mfa36C/aYSN2U7OPtWUyQx57znkiTz94rPz2hgvkWWAAO67Xjk8Jzg+efWjV7q1veabZWJspIUs4xGr94JN32uei+TY+FVfpMAuon74AIsakSBwRtVQeox1HrWzll+Baw2vQOFvA2c78jj7A/elRO4eJpSyS2+D0JuYxn5mlWckHB/g3otLdbOO0eGN4opTOiyJuw7dW8WSfnU2AqhEAEfXaBgZ9fSm4p2K4HdM9ZY4nwczngDOfKhWu6XdakjNHe3RBGPo8szGM+4E+H5Yovil8/hSp6Comlqjzqa1ltJO5njeNx0U8Z/SnIdo+zW/uoILqDubxI3QnjJwR7qx+r6YLK7aOF8qwDHwcg5PX4CqxuuxxZMXDumUu8wM7aej7hn/+TUZgdQW3Nxz0oK2sL3rRpa3U2wkEr0yOPb6VTgyfNB1n4OGHxNMDAgh9vwJNVrSV54XlFnco6geCSNv5gOuBnip4pJRcRq8MSqXAO9tpxn0JrVjbMeRIczEKAi8H+mq1/JiLf6e796kjlkMSbnt1cAE4aPOfhk0UtcmwUvIr59G68+6mWIV5TFz3WTioTPR25NwbmQJdRbQxwrMDj/UMVAwm+/FZP7T3OTTfGJzBAmqWObkUQuLcd9IFsLVl3kcYzgHjowqrNChCZtO53E5YbuBjgc5o4G8i/pdq1/OkQkWMN98jI/3NG+0VlbWOgMluuH7xNxYgsfj6UNW4jtou9GVKc4DdMUQ1W8i1js401i8j5mUd223IORx09tY5SHiu5kBXanNjdr9q2kz/AJc/lTDBMv2oZF/6DU9M6VUj7d9koz50TD4UE9PLw/rQY4T7XHsNFrV++twT5DHxqVIvje+xetLW7vEke1sri4VCN7RRFtnXrgUyaIwcTxyRN5iVSv5itp/DcmOPVCh2YCc+vhk/at+LzB2yAkc+I+zvM/gn400xtE7zcXo8IHdKMDbj50q94FhYyEs1hayHPLNAhJ+YpVvxfsz7hfgweodptB0+HTLgwarOmoW7zwbRGvhGcggnjgfjQ7Tf4g6LqF9a21rol2RcXUVsJJ7kDBkOAcKOcc+fpQXtbLZwad2YVreGSMaXI0eRJkIUJ4+s9D5594oF2TuYpte7PpBptqhl1WMEhpSQVMeCMyHnDGqKJXo53lt+zbdou30ejazqenwdn7WX6ARiV7l235Kgce5vwNC7n+J2rRWffw6Fo8DmYRbWgZ2Hh3Dkt7RVPtBPLe9tNftY7WxZgM95Jbq7Ngx5yT76parclFt1t4bQpJcgk/QoyNnC5O9evu91bxXoR3Xtmw/ib231zs12hGn6TLbwxNbJMN1srMGOQcZ8uPTzNZDtD2g1G8hv72+nWa5gv/oyuY0TKqDwdoGelE/4zX01v2xeGKO3wbdP8W0ilPVvNlJ8hwDigesX2oNYX12rSRqNWeJZYUCDGCcZUAE4Oeea1C1vRV7O31xqN7cCdgwW3OEHQeJeetWYNZvj2lFmLjFspOF7tegQn0z5etP7Gx6vrVxfJB316YYQzI0oO0Ejkbj6ZxiqFpDI/bK8YIT3ImLKeowhX8yKYCpDqV7f6bqQu7qSVFt08LHAB76PyHHrQ/SiP+LWWFH/ANRH0/zCreiRCXT9TEjBE7uFWcjO0GZeabbWog7Q20MUqXCC6jVZY+jcr061hpPoc8mGjfJjVfCD0HxrY21yq6ElxleWxkN08Rrz23uJYIGWNghbGc1ro45YewEMrI3d979vadp8Z86dUSc9wfdarCLh3SEs24jPkffVR9RWRACH3nAwfs4z5c1QnOXYHw8kkeYzk01zuQ/04NK6YySLGsXfeSXEW3rO5+Gaj0uTBRfPezfDbVW4fvJ5H/rLfM0+Fu7kyPIVmw9BrU7jdYIE3ZZ+c49tO0W97rRr+3B2kyxSqT907v2oXcNvEPdrhfI+3+/zqW1WW3Eu3kMvhPXkYYf37azl3NkJRazKSR9J284524NENKvri7e8zIG7pPqyemceys0dRvSpJkBGccxofzWjHZ66eQXRlKkqmcd2qg9fQDNPszXcv22p3gizO0O7dg7VwPu46n+o/Kr1vr86RPiGB9qbsMo5/vistFrNyYJG7m1Rl2bQLdfUDOPeKktdavTHc4Fse7gyB9GXruQenofwFKx02j1nsPeG8sr6c20FuGkaIdygG8LG559ftfjWpnb/ABf/AMkp/wD2BXmmh6xqsfYY6hYX6WUqy3Esndwowk2xowG1gcdT86zM38R+1620LDWMhlOc2kB82B+5z5/Mn1rDdnvSI0hkI4w7fnn9aVeAyfxH7YFh/wDOMZAJxbQjk8/y+2lQBv8AWOzNjqaackstxCthZGzj2srbl27dx4HODVPROxmn6LqVhem/uJPoM5uAjxqoc4Xw5z/T6UMS91GDlLmYewv/AL0251m5niaJ5zI6E+E+Y4APAPHX51xznplFcP8AyS6hZ2sOtanqMVwxmvWYMGjwEXIJAbJHkPIfpVC3057rV4PpUne97KNneJzGVPQNxzgHjjjyNCp7q7uFO2AtCGwpIKr8OOTii+gQ6xaT2k0PhRzh45CTkgHqMcD2nofeKsqpLuTUp1sOfxB0OPW9dOqpqUESFFjWKWNixIJPGPfQy50kXujy6HaXURkk1VrxJSGVfEgQL055Pp5+zFM1jUbq/uy3dqq4UYB4B4A4wTjOfh8aDSzXCAEhC5X7WANgyelIsjbNrXLseh/w27Gap2Yl1efUxDsnttqNGWPIJJ+0B+HpQPRuzlzddptY1SS4hs4JLm7gGU3tIuWXPTC4bHmCcHFajsFf3Y0+4g1a1nUypmJ2XO1AOAx3cHnpgY9vQA+0D3EOrSd5JI1lEZVlSJRvYsO9ZUzxjGByOnQYOQnU5MnHWN6bHhTvdAe67KW2naXqtvpd7HdmWGEv3jJEFVZFbJYtt5AY9R0oJo/Zy8j1XT5u4j2rcwvvW5hYEB16bXOaup2iluZLmzt1hitSCBDjwbc8njjp5+pPJzUkTFLu3Yxxs6yo/GG2gMSdo59/WjFkyTPHJ5Fvjv8AiBouy2pCKMDTpi23J2FGz8mz+Fbu4sWh/hXa2d5FJGRdLvjdeQO8Y8jPurzV+zV50hjeWTjCCM8g8/lzXpYtZrT+FNhb3MLwus53K6EbcM/X0rrTT8EmY2eFJmZJtu04J2jnPPiznpz7T09tZ6/hSI7oSxiZSUZ1Iz58fDn2dKPXHiLEtjZ1bblfceT+XlQK/mMrLHI4KFgN32j8/Mc8fCsnwYkwZhhz608Hg5o5D2cupESVSZYZDuDp12+uPdQ2OGaGdmWIgxMPDIpxn2k8D40K032G0SWdqWZZJwGQ8bN2WOfYOfPyoiUgZ2Q8eImRsYwACMAnHJ/au2ZuJWzE4RYzuZWTGWIG0Hjk55qskaLK30gI0hyfrJuV94Xr8Paam22xTk1i87AQzW6RZ4XvRhfQ8dTj9av6UkNiJg86N3i4yDnJ58h/vUMsjvbs/cgFuJPIDHw4/eqyuoZAc7mIHIBXPlVFT0WmVXbY46YI1lWK6gKMAFJfBzkHng+31qez0obJ+/v7JA8TRrl3YgnHovspBbhUGRDnjc2xOPX8KfBPcMJO4DSsCQrRIGwMccAHHkaX5fwdP2mu7NXpy20fYTUNJtrmO6uVW4lHdLJgKyxqB4gvOQ3rxWC7iKa0gbvQNqttyvqfy64rU6fNqEk724hupo2l7uOKBJBukCse7YgcZAyeQQFyOM5E3em3cYC9xKrFgqqih8k5PBX3f70ysS8KT0CWtY2IPf44A4jJ6DH6UqIT9ntVSTCQzyDGcx2k7AezOylWktI9Xn0DQLxQrPc26scshIwfYeDx8ang7E6GfDbEzFjkkzsHPA4yDn4e+o+8B+0tIFQeKRY0vBiaLdxp01oGMdtqj45Bjui+evkWJPXPSsffNqyXAlmkvofFg94pXevoen6Vr4b24iH1VxIP6WbI/GrUes3QG2RY5AeDjwmp3idezXWzzya3R3EryykluFjZfBgYHlny9fX1NcNtat9VdRsVPlu2geWOB0r0LvdGuSfpumx7zwWEYB+Ywarydm+z16c280tu3ok36Nk1B4siJtP0ZqCaJHWSHUbq3ZWJ2CUFOmPShWurM8bSWjfSifDtGNx4I592SeT581rp+wjxnfaXqMx6d8hH/cM/lVF+y+rQsdtukqjq0cgYn3A/t5Vmrnu1s3k9Hmlnousvdlo7CUc4cMwUfM/70ZtYL36U5nt51aN8JlSASQOhPtxWluIbmxB7+2niIGcvEVB+NcW6SVCHc7WwcoMnPvrKzcuzRnJEOlXU9pqUU5Tu3jJYsW5xg8+/Bx6cVo9R7X2Nza/Rr5DLAxBIm+zn3jz6D061mLjT7csJIrsqwXbtkXcR05yT7Pbz86QtIXhSKW5VWGQzcnd7cHp0ommvDHRbstE7Ma6xiSyltJBk7YZWxxg5wcj3D0pz/wANdNCBY725ZQwcBlUlvYcDp+9UQn0FZLiyumnuAFJjVQFY7snOTitRY9ooHQC+DRygkBxgqR1Ht88fCqxl9MpMrjtlCfs7eRWx7hYJXUeFRIVBxj1PB5PmPL21kdR7HaxNdR3ncNGBz4/rTn/pBGPea3+qdoba1g7y2+vfGSFRjtHHl5/PyoPb9r/o8W+/uLeMNgo8ikFuueh8v76kVmOUq4wY5nW9mSt7SyjMsc0ck7/ZkeaTZsHGV29B5fhVC57MapB3ndWsTwuR3bxsHKjPBGDnyI59tekWfarT9RuGhaW1uVjiZ3RImY7R1659elEra30ljJcQRxxPNjvSuYyccjcOP7Fa3UVrkLOPaPLLLQtXVWhk0667oMFMqRMSPjjp+3wovH2YnUJGsEPeBiVMyRMWOCBkMOR7PUA1uhpVsDKbW8uIGnUg4ZJAvrgMDjy6eg9KkbTpGikjMtu0ZULGr2/C4GCeueeM9OR7Tnd5PX/Q+NJmSttBmMQF7q1tahGVgItNgB3A7hhkYnyqzDoiQDbbdo9UWJnMjRwRSJljyTlSPZ8qvQaRrVvvkF7buwAEYXwJnJ6pzxjA/P1prx9oUuUMsKzKQSXjYJFu6dD4sefX5Ypldf6RXt6ZSHZ20dmk+ma+ZDIJdySCM7hxnLHOenJ544omdJkMCMtvrMqLIHVpb/ILKcjOARx1p1ve6rDKrXOm20kQY7ijZ48jtzg59PnVfXtcvUuIR9HuZDJnbmE8AHkYxgDHT0HwplYncLJc6gqgfQ14/nmJP4LXK7bJHcQRyq6R7hyrSjIPxIpU20G2VqRXArrHmuVUkcUtT1euD/LXQKAHZpFA3Xp7a5t4pDdQA+OaeH/AmdAPIMRVuLW7yLiVElX3YPzqmOldxx9qsaRuwzBr8J4lilj/AMpyP0qQDRNTY96lnI/80kQDfMjP40AKL5daaQFGHWlcJ+g2gtP2P0qVSYlnhB5zDOcfI5obd9hIyP8Al9SkGPKSPP4qRXIpJIeYHdQf5GINW49WvouGmV18g6Zx8f8AepvBLF4oBy9jNST/AApreULyMORn/Vj86oz9n9XgyZLGbA5LKA4/DNbWHtA6j623B9qv+hq3Fq1jINxYxuf5l/XmpPp16DhLPMJFMDATAhvIMTx7gaoappqal3bSyyr3e7B6k5x+34mvYWuFljz3iSJnoSGzVC60uzks5JhZ2kj8kgRiPjHP2een5+ylnDUvcvuK4/Z5RYaQdPlka3fh02lmHQcHjHQ5Aq9OLl5Bsu5Vj4JUkkHHt6/H31rTbW6H6uwtlHo3eP8Am3vpqTywMTBHbQAc5itox6+ZBNN8F09tlceTJje5YC0sdowS9jIblugO4k4489p9BWu019TEbHWUhjA/w2Rgu1cc5BxwPLqfWg15qOoybQlxcPkEYXIx78YqqtteOQ0uB7Wbn96pGHj7LX1FX5Rqjf2W4ILqNj7DUodsbk+z5MKzMdkw5MnJ6eHP7VYsbZ7aTek0qtx9ltv4Cq8SfM0Yt55mCLA0oYeSlh86ilSKBu7nNvAemyR1XH4iqBnaQFZpXf1DMeaaoj+4NtHEOQQ73R4vD3Lz/wBaoSPnilVLNKjiLyKm2lilSpxR2K5uH8tKlQA5TxSNKlQAg1d8VKlQAiKWKVKgDhGKaWauUqAF3ldC7qVKgDgRGJVhkeYNTxTSxw9zBNIIiu0oW4x8ulKlWaAqGHc5be+Tx9o4+VN7kffY5xmlSoAkWONeMVKAF6KoHupUqAHruzgbefZTilKlQAu7UUsLSpUAdxSpUqAP/9k=" alt="À Propos de la Clinique">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <h3>À Propos de MediCare</h3>
+                        <p>Avec plus de 25 ans d'excellence dans les soins de santé, la Clinique MediCare sert la communauté avec compassion et dévouement. Notre équipe de médecins et de personnel médical expérimenté s'engage à fournir des soins de la plus haute qualité.</p>
+                        <p>Nous croyons en une approche centrée sur le patient, où chaque individu reçoit une attention personnalisée et un traitement adapté à ses besoins spécifiques.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> Services d'Urgence 24/7</li>
+                            <li><i class="fas fa-check-circle"></i> Technologie Médicale Avancée</li>
+                            <li><i class="fas fa-check-circle"></i> Personnel Médical Expérimenté</li>
+                            <li><i class="fas fa-check-circle"></i> Soins de Santé Abordables</li>
+                            <li><i class="fas fa-check-circle"></i> Assurance Acceptée</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nos Services</h2>
+                <p>Découvrez notre gamme complète de services médicaux</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h4>Urgences 24/7</h4>
+                        <p>Service d'urgence disponible 24 heures sur 24, 7 jours sur 7 pour tous les cas médicaux urgents.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h4>Imagerie Médicale</h4>
+                        <p>Équipements de pointe pour radiographie, IRM, scanner et échographie.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-procedures"></i>
+                        </div>
+                        <h4>Chirurgie</h4>
+                        <p>Salles d'opération modernes avec chirurgiens spécialisés dans divers domaines.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h4>Pharmacie</h4>
+                        <p>Pharmacie sur place avec tous les médicaments nécessaires et conseils pharmaceutiques.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Laboratoire</h4>
+                        <p>Laboratoire moderne pour tous les tests et analyses nécessaires.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wheelchair"></i>
+                        </div>
+                        <h4>Rééducation</h4>
+                        <p>Services de physiothérapie et rééducation pour une récupération optimale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Booking System -->
+    <section id="booking" class="booking-system">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Système de Réservation</h2>
+                <p>Réservez votre rendez-vous en quelques clics simples</p>
+            </div>
+            
+            <div class="booking-steps" data-aos="fade-up" data-aos-delay="100">
+                <div class="step active" id="step1">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Informations Personnelles</div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Choix du Médecin</div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Date et Heure</div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-number">4</div>
+                    <div class="step-label">Confirmation</div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="booking-form-container" data-aos="fade-up" data-aos-delay="200">
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle"></i> Votre rendez-vous a été confirmé avec succès ! Vous recevrez un email de confirmation shortly.
+                        </div>
+                        
+                        <!-- Step 1: Personal Information -->
+                        <div class="booking-form-step active" id="formStep1">
+                            <h4 class="mb-4">Informations Personnelles</h4>
+                            <form id="personalInfoForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Nom Complet *</label>
+                                        <input type="text" class="form-control" id="fullName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Téléphone *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Date de Naissance</label>
+                                        <input type="date" class="form-control" id="birthDate">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Adresse</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Votre adresse complète">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Motif de la Consultation</label>
+                                        <textarea class="form-control" id="reason" rows="3" placeholder="Décrivez brièvement la raison de votre visite"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="form-navigation">
+                                <div></div>
+                                <button type="button" class="btn-step btn-next" onclick="nextStep(1)">Suivant →</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Doctor Selection -->
+                        <div class="booking-form-step" id="formStep2">
+                            <h4 class="mb-4">Choisissez Votre Médecin</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Spécialité</label>
+                                <select class="form-select" id="specialtySelect" onchange="filterDoctors()">
+                                    <option value="">Toutes les spécialités</option>
+                                    <option value="cardiology">Cardiologie</option>
+                                    <option value="neurology">Neurologie</option>
+                                    <option value="pediatrics">Pédiatrie</option>
+                                    <option value="ophthalmology">Ophtalmologie</option>
+                                    <option value="dentistry">Dentisterie</option>
+                                    <option value="orthopedics">Orthopédie</option>
+                                </select>
+                            </div>
+                            <div class="doctor-grid" id="doctorGrid">
+                                <div class="doctor-card" data-specialty="cardiology" onclick="selectDoctor(this, 'Dr. Sophie Martin', 'Cardiologue')">
+                                    <img src="https://picsum.photos/seed/doctor1/80/80" alt="Dr. Martin" class="doctor-avatar">
+                                    <div class="doctor-name">Dr. Sophie Martin</div>
+                                    <div class="doctor-specialty">Cardiologue</div>
+                                    <div class="doctor-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        4.9
+                                    </div>
+                                </div>
+                                <div class="doctor-card" data-specialty="neurology" onclick="selectDoctor(this, 'Dr. Pierre Dubois', 'Neurologue')">
+                                    <img src="https://picsum.photos/seed/doctor2/80/80" alt="Dr. Dubois" class="doctor-avatar">
+                                    <div class="doctor-name">Dr. Pierre Dubois</div>
+                                    <div class="doctor-specialty">Neurologue</div>
+                                    <div class="doctor-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        4.8
+                                    </div>
+                                </div>
+                                <div class="doctor-card" data-specialty="pediatrics" onclick="selectDoctor(this, 'Dr. Marie Bernard', 'Pédiatre')">
+                                    <img src="https://picsum.photos/seed/doctor3/80/80" alt="Dr. Bernard" class="doctor-avatar">
+                                    <div class="doctor-name">Dr. Marie Bernard</div>
+                                    <div class="doctor-specialty">Pédiatre</div>
+                                    <div class="doctor-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        5.0
+                                    </div>
+                                </div>
+                                <div class="doctor-card" data-specialty="orthopedics" onclick="selectDoctor(this, 'Dr. Jean Laurent', 'Chirurgien Orthopédiste')">
+                                    <img src="https://picsum.photos/seed/doctor4/80/80" alt="Dr. Laurent" class="doctor-avatar">
+                                    <div class="doctor-name">Dr. Jean Laurent</div>
+                                    <div class="doctor-specialty">Chirurgien Orthopédiste</div>
+                                    <div class="doctor-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        4.7
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn-step btn-prev" onclick="prevStep(2)">← Précédent</button>
+                                <button type="button" class="btn-step btn-next" onclick="nextStep(2)" id="doctorNextBtn" disabled>Suivant →</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Date and Time Selection -->
+                        <div class="booking-form-step" id="formStep3">
+                            <h4 class="mb-4">Choisissez Date et Heure</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Date du Rendez-vous *</label>
+                                    <input type="text" class="form-control" id="appointmentDate" placeholder="Sélectionnez une date" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Type de Consultation</label>
+                                    <select class="form-select" id="consultationType">
+                                        <option value="first">Première Consultation</option>
+                                        <option value="follow-up">Consultation de Suivi</option>
+                                        <option value="emergency">Urgence</option>
+                                        <option value="routine">Contrôle Routine</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h5>Créneaux Disponibles</h5>
+                                <div class="time-slots" id="timeSlots">
+                                    <div class="time-slot" onclick="selectTime(this, '09:00')">09:00</div>
+                                    <div class="time-slot" onclick="selectTime(this, '09:30')">09:30</div>
+                                    <div class="time-slot" onclick="selectTime(this, '10:00')">10:00</div>
+                                    <div class="time-slot" onclick="selectTime(this, '10:30')">10:30</div>
+                                    <div class="time-slot" onclick="selectTime(this, '11:00')">11:00</div>
+                                    <div class="time-slot" onclick="selectTime(this, '11:30')">11:30</div>
+                                    <div class="time-slot" onclick="selectTime(this, '14:00')">14:00</div>
+                                    <div class="time-slot" onclick="selectTime(this, '14:30')">14:30</div>
+                                    <div class="time-slot" onclick="selectTime(this, '15:00')">15:00</div>
+                                    <div class="time-slot" onclick="selectTime(this, '15:30')">15:30</div>
+                                    <div class="time-slot" onclick="selectTime(this, '16:00')">16:00</div>
+                                    <div class="time-slot" onclick="selectTime(this, '16:30')">16:30</div>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn-step btn-prev" onclick="prevStep(3)">← Précédent</button>
+                                <button type="button" class="btn-step btn-next" onclick="nextStep(3)" id="timeNextBtn" disabled>Suivant →</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Confirmation -->
+                        <div class="booking-form-step" id="formStep4">
+                            <h4 class="mb-4">Confirmez Votre Rendez-vous</h4>
+                            <div class="booking-summary">
+                                <div class="summary-item">
+                                    <span class="summary-label">Patient:</span>
+                                    <span class="summary-value" id="summaryPatient">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Médecin:</span>
+                                    <span class="summary-value" id="summaryDoctor">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Date:</span>
+                                    <span class="summary-value" id="summaryDate">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Heure:</span>
+                                    <span class="summary-value" id="summaryTime">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Type de Consultation:</span>
+                                    <span class="summary-value" id="summaryType">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Total:</span>
+                                    <span class="summary-value" id="summaryTotal">€80</span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                    <label class="form-check-label" for="termsCheck">
+                                        J'accepte les termes et conditions et la politique de confidentialité
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="reminderCheck">
+                                    <label class="form-check-label" for="reminderCheck">
+                                        Envoyer un rappel par SMS et email 24h avant le rendez-vous
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn-step btn-prev" onclick="prevStep(4)">← Précédent</button>
+                                <button type="button" class="btn-step btn-submit" onclick="submitBooking()" id="submitBtn" disabled>Confirmer le Rendez-vous</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Informations de Contact</h2>
+                <p>Nous sommes là pour vous aider</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-info">
+                        <h4>Contactez-Nous</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-content">
+                                <h5>Adresse</h5>
+                                <p>123 Avenue de la Santé<br>Quartier Médical, 75000 Paris</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-content">
+                                <h5>Téléphone</h5>
+                                <p>+33 1 55 12 34 56</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-content">
+                                <h5>Email</h5>
+                                <p>info@medicareclinique.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-item-content">
+                                <h5>Horaires d'Ouverture</h5>
+                                <p>Lun - Ven: 8h00 - 20h00<br>Sam - Dim: 9h00 - 17h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-info">
+                        <h4>Envoyez-nous un Message</h4>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nom</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Sujet</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Envoyer le Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Témoignages de Nos Patients</h2>
+                <p>Écoutez ce que nos patients satisfaits disent de leur expérience à la Clinique MediCare</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Les médecins de MediCare sont extrêmement professionnels et attentionnés. Ils ont pris le temps d'expliquer tout et m'ont mis à l'aise tout au long de mon traitement."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/person1/70/70" alt="Patient" class="author-avatar">
+                            <div class="author-info">
+                                <h5>Sophie Lambert</h5>
+                                <p>Patient en Cardiologie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Installations excellentes et personnel accueillant. Le système de réservation en ligne a rendu la prise de rendez-vous si facile. Je recommande vivement cette clinique !"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/person2/70/70" alt="Patient" class="author-avatar">
+                            <div class="author-info">
+                                <h5>Thomas Moreau</h5>
+                                <p>Patient en Orthopédie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"En tant que parent, j'étais inquiet pour le traitement de mon enfant. L'équipe pédiatrique était incroyable - douce, patiente et très compétente. Merci MediCare !"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/person3/70/70" alt="Patient" class="author-avatar">
+                            <div class="author-info">
+                                <h5>Marie Dupont</h5>
+                                <p>Patient en Pédiatrie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Derniers Articles</h2>
+                <p>Restez informé avec nos conseils santé et actualités médicales</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://picsum.photos/seed/blog1/400/250" alt="Article Blog">
+                            <div class="blog-date">15 Nov 2024</div>
+                        </div>
+                        <div class="blog-content">
+                            <h4>5 Conseils pour Maintenir un Cœur Sain</h4>
+                            <p>Découvrez les habitudes quotidiennes qui peuvent aider à garder votre cœur en bonne santé et à prévenir les maladies cardiovasculaires...</p>
+                            <div class="blog-meta">
+                                <div class="blog-author">
+                                    <img src="https://picsum.photos/seed/author1/40/40" alt="Auteur">
+                                    <span>Dr. Martin</span>
+                                </div>
+                                <a href="#" class="read-more">Lire Plus →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://picsum.photos/seed/blog2/400/250" alt="Article Blog">
+                            <div class="blog-date">10 Nov 2024</div>
+                        </div>
+                        <div class="blog-content">
+                            <h4>L'Importance des Bilans de Santé Réguliers</h4>
+                            <p>Pourquoi les check-ups médicaux réguliers sont essentiels pour détecter précocement les problèmes de santé et maintenir votre bien-être...</p>
+                            <div class="blog-meta">
+                                <div class="blog-author">
+                                    <img src="https://picsum.photos/seed/author2/40/40" alt="Auteur">
+                                    <span>Dr. Dubois</span>
+                                </div>
+                                <a href="#" class="read-more">Lire Plus →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://picsum.photos/seed/blog3/400/250" alt="Article Blog">
+                            <div class="blog-date">5 Nov 2024</div>
+                        </div>
+                        <div class="blog-content">
+                            <h4>Nutrition et Immunité : Le Lien Essentiel</h4>
+                            <p>Comment une alimentation équilibrée peut renforcer votre système immunitaire et vous protéger contre les maladies...</p>
+                            <div class="blog-meta">
+                                <div class="blog-author">
+                                    <img src="https://picsum.photos/seed/author3/40/40" alt="Auteur">
+                                    <span>Dr. Bernard</span>
+                                </div>
+                                <a href="#" class="read-more">Lire Plus →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4>À Propos de MediCare</h4>
+                        <p>Fournissant des services de santé de qualité avec compassion et excellence. Votre santé est notre priorité absolue.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Liens Rapides</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Accueil</a></li>
+                            <li><a href="#specialities">Spécialités</a></li>
+                            <li><a href="#team">Équipe</a></li>
+                            <li><a href="#about">À Propos</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#booking">Prendre RDV</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Politique de Confidentialité</a></li>
+                            <li><a href="#">Conditions d'Utilisation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Abonnez-vous à notre newsletter pour des conseils santé et les dernières actualités.</p>
+                        <form class="mt-3" id="newsletterForm">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Votre Email" required>
+                                <button class="btn btn-primary" type="submit">S'abonner</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Clinique MediCare. Tous droits réservés. | Conçu avec <i class="fas fa-heart"></i> pour une meilleure santé</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
